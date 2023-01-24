@@ -5,6 +5,7 @@ $main-color: #8daae5;
 $special-color: red;
 $default-font: arial, sans-serif;
 $special-font: 'pt sans', 'roboto',arial, sans-serif;
+$robert-color: rgb(13, 92, 238);
 
 * {
     margin: 0;
@@ -95,9 +96,42 @@ html{
     
 }
 .menu{
-flex-basis: 100%;
-background-color: darkblue;
-}
+    flex-basis: 100%;
+    height: 70px;
+    margin-top: 10px;
+    background-color: rgb(69, 69, 75);
+    font-family: $special-font;
+    padding: 15px 50px 15px 80px;
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+    &__item {
+        margin: 0 20px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        &:hover{
+            border-bottom: 2px yellow solid ;
+        }
+        &:nth-last-child(1){
+            margin-left: auto;
+            border: 2px solid #666;
+           
+            &:hover{
+                border-color: yellow;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+    .menu__link{
+        padding: 0 22px;
+    }
+ }
 
 .main-articles{
     flex-basis: 100%;

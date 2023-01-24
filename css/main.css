@@ -84,7 +84,39 @@ html {
 
 .menu {
   flex-basis: 100%;
-  background-color: darkblue;
+  height: 70px;
+  margin-top: 10px;
+  background-color: rgb(69, 69, 75);
+  font-family: "pt sans", "roboto", arial, sans-serif;
+  padding: 15px 50px 15px 80px;
+}
+.menu__list {
+  display: flex;
+  list-style: none;
+}
+.menu__item {
+  margin: 0 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 4rem;
+}
+.menu__item:hover {
+  border-bottom: 2px yellow solid;
+}
+.menu__item:nth-last-child(1) {
+  margin-left: auto;
+  border: 2px solid #666;
+}
+.menu__item:nth-last-child(1):hover {
+  border-color: yellow;
+}
+.menu__link {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.menu .menu__link {
+  padding: 0 22px;
 }
 
 .main-articles {
