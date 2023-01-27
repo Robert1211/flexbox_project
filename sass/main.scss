@@ -132,11 +132,14 @@ html{
         padding: 0 22px;
     }
  }
+.article{
+
+}
 
 .main-articles{
     flex-basis: 100%;
     // min-height: 50vh;
-    background-color: rgb(3, 6, 10)
+    background-color: $main-color
 
 }
 .article-list{
@@ -146,4 +149,5 @@ html{
 .footer{
     flex-basis: 100%;
     background-color: rgb(13, 57, 153);
+    
 }
