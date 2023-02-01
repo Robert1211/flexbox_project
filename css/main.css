@@ -119,9 +119,27 @@ html {
   padding: 0 22px;
 }
 
+.article {
+  padding: 30px 50px;
+}
+
 .main-articles {
   flex-basis: 100%;
   background-color: #8daae5;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-articles__intro {
+  flex-basis: 100%;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 60px 0 30px;
+  text-align: center;
+  font-size: 4.4rem;
+  letter-spacing: 2px;
+}
+.main-articles .article {
+  flex-basis: 50%;
 }
 
 .article-list {
