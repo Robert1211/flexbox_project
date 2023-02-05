@@ -121,6 +121,37 @@ html {
 
 .article {
   padding: 30px 50px;
+  color: #333;
+  text-align: center;
+}
+.article__image {
+  display: block;
+  width: 100%;
+}
+.article__title {
+  font-family: "pt sans", "roboto", arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 35px 0 15px;
+}
+.article__introduction {
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+.article__btn {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  min-width: 200px;
+  font-size: 1.8rem;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 6px 12px;
+  background-color: #8daae5;
+  color: #000;
+}
+.article__btn:hover {
+  background-color: #fff;
 }
 
 .main-articles {
@@ -144,7 +175,9 @@ html {
 
 .article-list {
   flex-basis: 100%;
-  background-color: rgb(181, 84, 5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footer {

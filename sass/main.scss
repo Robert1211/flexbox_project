@@ -134,7 +134,39 @@ html{
  }
 .article{
     padding: 30px 50px;
+    color: #333;
+    text-align: center;
     
+    &__image {
+        display: block;
+        width: 100%;
+    }
+    &__title{
+        font-family: $special-font;
+        text-transform: uppercase;
+        font-size: 3rem;
+        padding: 35px 0 15px;
+    }
+    &__introduction{
+        line-height: 1.6;
+        font-size: 1.6rem;
+    }
+    &__btn{
+        display: block;
+        margin: 10px auto;
+        width: 50%;
+        min-width: 200px;
+        font-size: 1.8rem;
+        border: 2px solid black;
+        text-decoration: none;
+        padding: 6px 12px;
+        background-color: $main-color;
+        color: #000;
+        &:hover{
+            background-color: #fff;
+        }
+
+    }
 }
 
 .main-articles{
@@ -159,8 +191,11 @@ html{
 
 .article-list{
     flex-basis: 100%;
-    background-color: rgb(181, 84, 5)
+    display: flex;
+    flex-wrap: wrap; //skip to new line
+    justify-content: space-around; //przerwy pomiedzy
 }
+    
 .footer{
     flex-basis: 100%;
     background-color: rgb(13, 57, 153);
